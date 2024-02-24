@@ -27,7 +27,7 @@ def conecta_db():
             else:
                 print(f'O arquivo {nome_tabela} foi encontrado')
         else:
-            print('Por favor digite um novo para o banco de dados.')
+            print('Por favor digite um nome para o banco de dados.')
     except ConnectionError as e:
         print('Erro de conexão', e)
     visualizar = input('Deseja visualizar a tabela? S/N ').upper()
